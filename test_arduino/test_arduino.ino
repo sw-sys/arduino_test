@@ -1,4 +1,6 @@
-int cnt=1;
+int x=1;
+int y=2;
+int z = 3;
 int DL=1000;
 
 void setup() {
@@ -8,6 +10,13 @@ Serial.begin(115200);
 
 void loop() {
   // put your main code here, to run repeatedly:
-Serial.print(cnt);
-Serial.println(" Mississippi");
+x = x + 2;
+y = y + 5;
+z = z + 4;
+Serial.print(x);
+Serial.print(",");
+Serial.print(y);
+Serial.print(",");
+Serial.println(z);
+delay(DL);
 }
